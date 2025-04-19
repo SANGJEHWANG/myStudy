@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- table
+        -table 태그를 이요하여 표를 생성해보자.
+
+        1. "나 여기서부터 여기까지 표 만들어줄께!" : <table></table>
+        2. "몇 줄 만들거냐면~" : table row <tr></tr>
+        3. "몇 칸 만들거냐면~" : table date <td></td>
+        3-2) "표의 헤더 부분은 table header" : <th></th> -> 굵게, 가운데정렬
+        4. td 안에 데이터를 넣어준다.
+     -->
+
+     <!-- 표 병합 
+        1) rowspan : row 들끼리 병합, 위아래 병합
+        2) colspan  : column들 끼리 병합, 좌우 병합
+
+        rowspan="병합할개수"
+     
+     -->
+
+
+     <!-- 표 시작 -->
+     <table border="1px solid black" align="center" width="200px">
+
+        <caption>메뉴판</caption>
+
+        <!-- 첫번째 줄 -->
+        <tr bgcolor="skyblue" height="50px">
+            <!-- 첫번째 줄 안에 2칸 -->
+            <th colspan="2">음료</th>
+            <!-- <th>가격</th> -->
+            
+        </tr>
+        <!-- (tr>td*2)*2 -->
+        <tr>
+            <!-- 두번째 줄 -->
+            <td>아메리카노</td>
+            <td rowspan="2">2000</td>
+        </tr>
+
+        <tr>
+            <!-- 3번째 줄 -->
+            <td>바닐라라떼</td>
+            <!-- <td>2000</td> -->
+            
+        </tr>
+
+
+     </table>
+
+     <hr/>
+
+
+     
+        <table border="1px solid black" align="center" width="200px">
+
+        <caption>스인재 4팀</caption>
+
+      
+        <tr bgcolor="yellow" height="50px">
+            <th>이름</th>
+            <th colspan="2">성별/주소</th>
+            <th>비고</th>
+            
+            
+        </tr>
+        <!-- (tr>td*4)*2 -->
+        
+        <tr>
+            <td>윤세영</td>
+            <td>남자</td>
+            <td>광주</td>
+            <td rowspan="4"></td>
+        </tr>
+
+        <tr>
+            <td>조동수</td>
+            <td>남자</td>
+            <td>광주</td>
+           
+        </tr>
+
+        <tr>
+            <td>황상제</td>
+            <td>남자</td>
+            <td>광주</td>
+           
+        </tr>
+
+        <tr>
+            <td>박민혁</td>
+            <td>남자</td>
+            <td>광주</td>
+           
+        </tr>
+
+    
+    
+</body>
+</html>

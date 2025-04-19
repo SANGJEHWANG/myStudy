@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @font-face {
+                    font-family: 'Ownglyph_corncorn-Rg';
+                    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
+                    font-weight: normal;
+                    font-style: normal;
+        }
+
+        /* 스타일은 설정 값이기 때문에 head태그 안에 작성
+             => sytle태그 내에  css 문법 작성
+
+             나 디자인 할거야!
+             - 무엇을? 선택자
+             - 어떻게? 선언
+
+             선택자 {
+                    선언 -> 속성 : 값;
+                }
+
+                */
+
+              h1{
+                color : red;
+                background-color: yellow;
+            }
+
+            h2{
+                color : rgb(47, 188, 34);
+                background-color: blueviolet;
+            }
+                
+            p{
+                color :rgb(96, 8, 227);
+                background-color: rgb(213, 21, 110);
+
+                /* 폰트 속성 
+                - font-family에 작성하는 글씨에는 순차적으로 우선순위를 가진다.
+                - 그렇기 때문에 웬만하면 유사한 스타일의 폰트를 나열해두는 것이 좋다.
+                */
+                font-family: 'Ownglyph_corncorn-Rg';
+                /* font-size의 기본 값은 16px */
+                font-size: 25px;
+
+                /* font-weight : bold(700), 100~900 */
+                font-weight: 900;
+
+                font-style: italic;
+
+                /* 웹폰트! -> 폰트를 로컬에서 가져오는게 아니라 웹에서 가져오는 것 
+                    1. 눈누폰트로 가서 웹폰트 font-face 를 가져온다.
+                    2. font-face에 있는 폰트 이름을 사용한다.
+                
+                */
+                
+            }
+
+            /* h2태그, p태그를 자유롭게 디자인해보자!
+            - color, backtround-color...
+            - 다 되신 분들은 캡처해서 단톡방에! 
+            */
+             
+
+    </style>
+</head>
+<body>
+    <!-- CSS 수업인데 html 파이을 만드는 이유? 
+        -CSS는 무언가를 (html)  디자인 해주는 언어이므로, 디자인해줄 대상이 필요하다.
+
+    -->
+
+
+    <h1>h1태그</h1>
+    <h2>h2태그</h2>
+    <p>p태그</p>
+    <h1>h1태그</h1>
+    <h2>h2태그</h2>
+    <p>p태그</p>
+    <h1>h1태그</h1>
+    <h2>h2태그</h2>
+    <p>p태그</p>
+
+
+
+
+
+
+
+
+</body>
+</html>

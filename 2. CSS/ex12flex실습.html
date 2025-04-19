@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 스타일 선언 방식 
+    - 우리가 기존에 했던 sytle 태그 내부에 적는 방식 '내부방식' 
+        => 개발자도구에서 디자인이 다 보이기 때문에 보안상 불리
+    - 따로 파일을 만들어서 연결하는 '외부방식'★
+        [1] css 파일 생성한다.
+        [2] link태그를 이용해서 연결한다.
+        [3] 필수속성들을 입력한다.
+            - rel (relationship 관계) : 나랑 무슨 관계냐면~ stylesheet
+            - href : 그 파일 어디있냐면~
+
+    - 태그에 직접 적는 인라인방식 : 긴급시 사용, 우선순위 높음
+
+    -->
+    <link href="./ex12.css" rel="stylesheet">
+  
+</head>
+<body>
+    <div class="container" style="background-color:lightpink;">
+        <div class="box1">
+            <h1>SMHRD</h1>
+        </div>
+        <div class="box2">
+            <a href="#">메뉴</a>
+            <a href="#">베스트</a>
+            <a href="#">뉴스</a>
+        </div>
+        <div class="box3">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+</body>
+</html>

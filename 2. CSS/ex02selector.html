@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* 선택자의 종류 */
+        
+        /* 1. 전체 선택자 : 모든 요소를 디자인한다. */
+        * {
+          color :brown !important;
+        }
+
+        /* 2. 태그 선택자 : 특정 태그를 선택해서 디자인한다. */
+        li {
+            color:green;
+        }
+
+        /* 전체, 태그가 아니고 내가 원하는 특정 요소들만 구분해서 디자인을
+            지정해줘야 하는 경우 => 클래스 선택자 or 아이디 선택자 
+            
+            -클래스 선택자 : 중복 가능, 재사용성이 뛰어남,
+                            한 요소는 여러 클래스를 가질 수 있다.
+                            기호 .을 사용
+
+
+            - 아이디 선택자 : 중복 불가능, 그 아이디는 한 문서당 1번만
+                             로고, 검색창 같은 고유한 디자인일 때 사용
+                             기호 #을 사용
+        */
+
+        /* 3. 클래스 선택자 */
+        .dinner {
+            color : black;
+        }
+
+        /* 선택자는 각자 가지고 있는 고유한 가중치가 존재
+            -전체 선택자 : 0
+            -태그 선택자 : 1
+            -클래스 선택자 : 10
+            -아이디 선택자 : 100
+            -!important : 수치의 의미가 없어 가장 강하다.
+            -가끔 남이 만드는 CSS를 외부에서 가져올 때, 내가 수정하지 못하는 경우
+                -> 그럴 때 !important 사용
+        */
+
+         /* 4. 아이디 선택자 */
+         #pick {
+            color : red;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <p>웹페이지를 꾸며주는 스타일 시트 언어</p>
+    <ul>
+        <li>CSS 기본구조</li>
+        <li>CSS 선택자</li>
+        <li>CSS 스타일</li>
+    </ul>
+
+    <h1 class="dinner">오늘 뭐먹지?</h1>
+    <ul class="dinner">
+        <li class="dinner" id="pick">연어</li>
+        <li class="dinner">참치</li>
+        <li class="dinner">샐러드</li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

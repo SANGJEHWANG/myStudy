@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .answer {
+            display: none;
+        }
+
+        /*  1. 클래스가 question인 요소에
+            2. 마우스를 올리면
+            3. 옆에 있는
+            4. 클래스가 answer인 요소를 보이게!
+        */
+
+        .question:hover~.answer{
+            display:block;
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>display : none</h3>
+    <span class="question">Q. 여러분들이 최근 가장 좋아하는 노래는 무엇인가요?</span>
+    <br>
+    <span class="answer">A. 너에게 닿기를 - 10CM</span>
+
+    <hr>
+    <!-- 퀴즈를 하나 더 만들어보자. 
+        -> 본인이 제일 좋아하는 음식!
+        Q.여러분들이 가장 좋아하는 음식은 무엇인가요?
+        A.답변~
+
+        ** hint! 스타일 시트 수정할거 없음 html 내에서 2개만 작성하면 됨
+     -->
+
+     
+     <span class="question">Q. 내가 좋아하는 음식은?</span>
+     <span class="answer">A. 한식, 샤브샤브, 감자, 스파게티</span>
+
+     <hr>
+     <!-- span.question + Enter -->
+     <div class="question">Q. 내가좋아하는 자동차는?</div>
+     <div class="answer">A.BMW</div>
+
+     
+    
+
+    
+</body>
+</html>

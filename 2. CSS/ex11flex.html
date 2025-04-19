@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        /* flex (Flex Box) 
+            -레이아웃 배치 전용 기능
+            -Flex 레이아웃을 만들기 위한 기본적인 구조
+                > 부모요소 : container
+                > 자식 요소 : item
+            - 부모요소/자식요소를 정하는 기준?
+                > container : Flex의 영향을 받는 공간
+                > item : 그 공간 내 설정된 속성에 따라 배치되는 요소
+
+            - 내가 움직여주고 싶거나, 수정해주고 싶은 그 요소 -> item
+              그 item의 부모 -> container
+
+            - container는 영원히 container이기만 한 것은 아니고
+              item 또한 여우언히 item 이기만 한 것은 아니다.
+              요소는 container이면서 item일 수 있다.
+        */
+
+        /* A. container에 적용하는 속성 */
+
+        .container{
+            background-color: whitesmoke;
+            height:500px;
+            
+            /* 1. flex 설정 
+             - flexbox를 사용하기 위한 전원버튼
+             - 아이템들은 부모의 메인축 방향대로 배치된다.
+            */
+            display : flex;
+
+            /* 2. 배치 방향 설정 (메인축 - 서브축 변경) */
+            flex-direction: row;
+            /* row(가로배치), column(세로배치), row-reverse, column-reverse */
+            
+            /* 3. 줄넘김 처리 설정 */
+            flex-wrap: nowrap;
+            /* nowrap (기본값), wrap, wrap-revese */
+
+            /* ★★ 정렬 ★★
+            - 메인축 (justify)
+            - 서브축 (align)
+            -flex-direction 설정에 따라 메인축/서브축은 가변적
+            */
+
+            /* 4. 메인축 방향 설정 */
+            justify-content: center;
+            /* center, flex-start, flex-end, left, right 
+               space-between, space-around, space-evenly
+            */
+
+            /* 5. 서브축 방향 설정 */
+            align-items: center;
+
+
+        }
+
+
+        /* B. Item에 적용하는 속성 */
+
+        .item {
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+            border: 1px solid navy;
+
+            /* flex-basis : 아이템의 기본 크기 설정 */
+            flex-basis: 25%;
+        }
+
+        #section{
+            flex-basis: 50%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- div.container>div.item*3 + Enter -->
+     <div class="container">
+            <div class="item" item id="section1"></div>
+            <div class="item" item id="section2"></div>
+            <div class="item" item id="section3"></div>
+    </div>
+    
+     
+    
+</body>
+</html>

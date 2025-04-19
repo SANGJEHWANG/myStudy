@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 계층 선태자 이해하기!
+        
+        1. 자손선택자 - 기호 : 띄어쓰기
+        2. 자식선택자 - 기호 : >
+        3. 근접후행선태자 - 기호 : +
+        4. 후행선택자 - 기호 : ~
+        
+        기준요소 (기호) 선택요소
+        */
+
+        /* (1-1) div를 기준으로 자손인 span의 색 tomato */
+        div span{
+            color : tomato;
+        }
+
+        div li{
+            color : blue;
+        }
+
+        ol > li {
+            color : rgb(237, 245, 9);
+        }
+
+                
+        li+li {
+            color : rgb(15, 248, 221);
+        }
+
+        li~li {
+            color:lime;
+        }
+
+        li:nth-child(2) ~ li{
+            color:orange;
+        }
+
+        ol * {
+            color : red;
+        }
+
+        strong:hover{
+            color : blue;
+        }
+       
+        strong:active{
+            color : red;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <strong>우리 반 규칙!</strong>
+        <ol>
+            <li>li지각하지 않기!</li>
+            <li>li결석하지 않기!</li>
+            <span>불가피할 땐 영표쌤과 자영쌤한테 꼭 연락하기!</span>
+            <li>li복습하기!</li>
+            <li>li추가했지롱!</li>
+            <span>중간에 스팬 추가</span>
+            <li>li마지막이야</li>
+        </ol>
+    </div>
+
+
+
+
+</body>
+</html>

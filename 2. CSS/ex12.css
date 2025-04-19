@@ -1,0 +1,75 @@
+
+        /* 상단바를 구현해보자.
+        - flexbox 기능을 이용해야한다. 
+        - 부모 요소 : 높이 100px 
+        - 자식 요소의 크기 비율 : 15%-70%-15%
+        ----------------------------------------
+        - a태그 : 글자 크기 25px, font-weight 400, margin/padding은 스스로 
+                text-decoration : none 
+
+        
+        1. 부모 요소에게 flex를 입력 
+        2. 자식 요소들에게 크기 설정 
+        3. 자식의 자식 요소들을 전부 가운데정렬 
+
+        ** 부모-자식 관계는 절대적X 자식또한 부모가 될 수 있다 .
+        */
+
+
+        /* 클래스가 container인거 디자인할게 */
+        .container{
+            /* 앞으로 flexible하게 레이아웃 짤거야 */
+            display: flex;
+
+            /* container의 높이는 100px이고  */
+            height: 100px;
+            background-color: whitesmoke;
+        }
+
+        a{
+            font-size: 25px;
+            font-weight: 400;
+            text-decoration: none;
+            color: black;
+            margin : 10px;
+            padding: 10px;
+
+        }
+
+        a:hover{
+            background-color: black;
+            color : white;             
+        }
+
+        /* 클래스가 container인 요소의 자식 div들은 전부 크기를 15%로 줄 것
+            - 가중치 : 클래스 (10) + 태그 (1) == 11 
+        */
+        .container>div{
+            flex-basis: 15%;
+        }
+
+        /* 클래스가 box2인 요소는 크기를 70%로 줄 것 
+            - 가중치 : 클래스 (10)
+            - 위에가 힘이 더 쎄다. 
+                해결방법 2가지 
+                Case1) 클래스를 아이디로 변경 (추천)
+                Case2) !important 를 사용 
+        */
+        .box2{
+            flex-basis: 70% !important;
+        }
+
+        /* 클래스 box2, box3는 이전까지는 item으로써의 역할을 했으나 
+            이제는 container로써의 역할을 해야함. 
+        */
+        .box2,.box3{
+            /* a태그의 부모요소 */
+            display: flex;
+
+            /* 메인축정렬 중앙 */
+            justify-content: center;
+            /* 서브축정렬 중앙 */
+            align-items: center;
+        }
+
+    
